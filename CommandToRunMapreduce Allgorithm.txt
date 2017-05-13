@@ -1,0 +1,27 @@
+Hadoop Project:
+ 
+copy file to hadoop system:
+Hadoop fs -mkdir /user/cloudera/input/raushan/
+Hadoop fs -put mahaseth.txt /user/cloudera/input/mahaseth/
+Hadoop fs -mkdir /user/cloudera/output/raushan/
+
+run Jarfile in hadoop:
+(i) for word count:
+hadoop jar wordcount.jar part1.WordCount /user/cloudera/input/mahaseth/word.txt
+/user/cloudera/output/raushan/1
+
+(ii) for pair Apprach
+hadoop jar wordcount.jar part1.WordCount /user/cloudera/input/mahaseth/word.txt
+/user/cloudera/output/raushan/2
+
+(iii) stripApprach
+
+hadoop jar wordcount.jar part1.WordCount /user/cloudera/input/mahaseth/word.txt
+/user/cloudera/output/raushan/3
+
+(iii) Hybrid Apprach
+
+hadoop jar wordcount.jar part1.WordCount /user/cloudera/input/mahaseth/word.txt
+/user/cloudera/output/raushan/4
+
+
